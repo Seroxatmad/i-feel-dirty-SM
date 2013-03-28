@@ -1,0 +1,71 @@
+* 1.4.3
+- css/style.css :
+	- graphical improvements
+- locale/
+	- add Dutch translation: thanks to Fred Sondaar (fretzl)
+	- update German translation: thanks to Malte Müller (acrylian)
+- 404.php :
+	- fix High-Tech Bridge security isue (http://www.zenphoto.org/trac/changeset/8994)
+- 404.php, albums.php, archive.php, contact.php, gallery.php, image.php, news.php, page.php, password.php, register.php, search.php :
+	- fix typo on breadcrumb
+	- fix html encoding
+	- fix an issue : set $relative to false in getGalleryIndexURL()
+- news.php :
+	- fix translation issue : add translation for 'news' on breadcrumb
+	- fix translation issue : add translation for 'category' on news filter
+	- remove news title on breadcrumb
+- inc_header.php :
+	- fix an issue : use only $isHomePage variable to avoid warning of unknown value
+	- fix an issue on RSS Feed : use options 'RSS_album_image' and 'RSS_articles'
+- inc_print_album_thumb.php
+	- fix an issue  with 1.4.3 : missing some '' on options
+- inc_print_image_thumb.php
+	- fix an issue  with 1.4.3 : code cleanup on next_image()
+- inc_sidebar.php
+	- add a link to gallery index
+- index.php
+	- fix an issue with 1.4.3 : use only isHomePage variable to avoid warning of unknown value
+- slideshow.php
+	- this file is deprecated (theme supports only colorbox slideshow : think to change options of slideshow plugin)
+
+
+* 1.4.2
+- css/screen.css :
+	- graphical improvements
+- js/i-feel-dirty.js :
+	- fix an issue : force to open comment box if there is an error
+- 404.php :
+	-fix High-Tech Bridge security isue (http://www.zenphoto.org/trac/changeset/8994)
+- album.php :
+	- fix translation issue of Slideshow link
+- image.php :
+	- fix translation issue of Slideshow link
+- inc_header.php :
+	- archive.php :
+	- use improvements of zenphoto 1.4.2 on printNewsArchive (http://www.zenphoto.org/trac/ticket/1972)
+- inc_header.php :
+	- call of new html_decode() function instead of zp_html_decode()
+- inc_sidebar.php :
+	- use improvements of zenphoto 1.4.2 on printUserLogin_out (http://www.zenphoto.org/trac/ticket/2054)
+- password :
+	- improvements of management of the password form (password form is displayed in colorbox)
+- search.php :
+	- fix translation issue of Slideshow link
+
+
+* 1.1
+- css/style.css
+	- fix issue with flag selector
+- footer.php, header.php, print_album_thumb.php, print_comment.php, print_image_thumb.php, print_news_loop.php, sidebar.php :
+	- prefix of filename with inc_ for more lisibility of the code
+- index.php :
+	- fix an issue : the title of the page was incorrect in some case
+- inc_footer.php :
+	- remove some code
+- inc_header.php :
+	- fix an issue : the title of the page was incorrect in some case
+	- fix an issue with rrs-news
+
+
+* 1.0
+initial version
